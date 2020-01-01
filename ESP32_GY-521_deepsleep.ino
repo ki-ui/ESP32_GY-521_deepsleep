@@ -41,7 +41,7 @@ void setup() {
   esp_sleep_enable_ext0_wakeup(INTERPRETER_PIN, 0);
 
   if (esp_sleep_get_wakeup_cause() == ESP_SLEEP_WAKEUP_EXT0){
-    // 通常起動はこの処理が行われないが、deepsleep復帰後はここの処理が実行される。
+    // ESP32通常起動時はこの処理が行われないが、ESP32deepsleep復帰時はここの処理が実行される。
   }
 
   esp_deep_sleep_start();
