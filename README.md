@@ -1,0 +1,2 @@
+# ESP32_GY-521_deepsleep
+deepsleepしたESP32をGY-521の動体検知で起動させるサンプルです
